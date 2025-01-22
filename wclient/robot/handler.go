@@ -43,6 +43,7 @@ func ResetHandlers() {
 	hlst = append(hlst, badHandler()...)
 	hlst = append(hlst, banHandler()...)
 	hlst = append(hlst, cmddHandler()...)
+	hlst = append(hlst, keyworddHandler()...)
 	hlst = append(hlst, helpHandler()...)
 	hlst = append(hlst, revokeHandler()...)
 	hlst = append(hlst, roomHandler()...)

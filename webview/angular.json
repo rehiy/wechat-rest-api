@@ -40,8 +40,7 @@
                     "configurations": {
                         "production": {
                             "baseHref": "/",
-                            "budgets": [
-                                {
+                            "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "2mb",
                                     "maximumError": "3mb"
@@ -52,12 +51,10 @@
                                     "maximumError": "10kb"
                                 }
                             ],
-                            "fileReplacements": [
-                                {
-                                    "replace": "src/helpers/env.dev.ts",
-                                    "with": "src/helpers/env.prod.ts"
-                                }
-                            ],
+                            "fileReplacements": [{
+                                "replace": "src/helpers/env.dev.ts",
+                                "with": "src/helpers/env.prod.ts"
+                            }],
                             "outputHashing": "all"
                         },
                         "development": {
